@@ -25,7 +25,7 @@ Let's begin!
   ```bash
   $ cd lab-vue-basics
   $ npm install
-  $ npm start
+  $ npm run dev
   ```
 
 
@@ -49,7 +49,7 @@ Let's begin!
 
 ### Iteration 1 | Create a basic template structure inside a new project
 
-For this lab, you'll have to create a new Vue project in a new folder. You can choose which options you want to include, but remember to stick with Vue 2 for the moment being.
+For this lab, you'll have to create a new Vue project in a new folder. You can choose which options you want to include.
 
 One of the main advantages of Vue (or any other frontend framework) is how easy it is to reuse components all over your application. This is exactly what we'll practice right now.
 
@@ -65,15 +65,15 @@ Yesterday you practiced showing a `string` inside a Vue component's template usi
 This challenge has two parts:
 
 - First, you just need to insert a mathematical operation inside your HTML and see what happens. Something as simple as `2 + 2` is enough here.
-- Then, the real challenge begins: you have to "print" a `string` on your template, with a twist: this string has to be returned by a function. Hint: [this article](https://lavalite.org/blog/created-and-mountedin-vuejs) can shed some light on how you can do this.
+- Then, the real challenge begins: you have to "print" a `string` on your template, with a twist: this string has to be returned by a function and read the data stored in other reactive variables. Hint: [this article](https://vuejs.org/guide/essentials/computed.html#basic-example) can shed some light on how you can do this.
 
 ### Iteration 3 | Show an element only if a particular property is set to `true`
 
 One of the main reasons we use something like Vue is so we can simplify common JavaScript operations. One of the main advantages of this framework is that it allows us to display elements conditionally in a very simple way.
 
-Let's practice this! Your challenge here is to create a boolean data inside a Vue component, and link it to an HTML element that will only show up in your template if the condition is set to `true`.
+Let's practice this! Your challenge here is to create a boolean variable inside a Vue component, and link it to an HTML element that will only show up in your template if the condition is set to `true`.
 
-We've seen the `v-if` and `v-show` properties in class today; but if you're stuck, [the official documentation](https://v2.vuejs.org/v2/guide/conditional.html) can be very helpful here.
+We've seen the `v-if` and `v-show` properties in class today; but if you're stuck, [the official documentation](https://v2.vuejs.org/v2/guide/conditional.html) can be very helpful here. Also, keep in mind that the boolean value has to be defined in your `<script setup>`.
 
 ### Iteration 4 | Display a list of elements that are stored inside a component
 
@@ -81,10 +81,10 @@ Remember how hard `for loops` seemed with vanilla JavaScript? Vue does a lot of 
 
 In this exercise, you're going to practice how to use the `v-for` directive. The challenge has the following components:
 
-- You need to create a list of posts inside the `data` of one of your Vue components. These posts need to include the following data: title, description, and content; and you need at least three of them.
+- You need to create a list of posts as a `ref()` inside one of your Vue components. These posts need to include the following data: title, description, and content; and you need at least three of them.
 - Then, you have to make the posts "show up" on your `template` using the `v-for` directive.
 
-Again, if you're stuck here, [you can always refer to the official documentation](https://v2.vuejs.org/v2/guide/list.html).
+Again, if you're stuck here, [you can always refer to the official documentation](https://vuejs.org/guide/essentials/list.html#v-for-with-an-object).
 
 ### Iteration 5 | Bonus | Change the background color of an element when pressing a button
 
